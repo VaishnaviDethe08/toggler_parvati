@@ -62,3 +62,33 @@
             height: 150px;
           }
     }
+</style>
+</head>
+<body>
+    <h1 class="app-title">Mahadev Parvati</h1>
+    <div class="container">
+        <img src="./img/parvati.png" class="parvati-img" id="mahadev"/>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn-1 btn" onclick="toggle('on')">On</button>
+        <button class="btn-2 btn" onclick="toggle('off')">Off</button>
+    </div>
+
+    <script>
+        function toggle(state)
+        {
+          const mElement = document.getElementById('mahadev');
+          if(state=='on')
+          {
+            mElement.src = './img/mahadev.jpg';
+
+          }
+          else 
+          {
+            mElement.src = './img/parvati.png';
+          }
+        }
+    </script>
+</body>
+</html>
